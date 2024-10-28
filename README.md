@@ -1,6 +1,4 @@
-
-#Airbnb Data Analyst Project
-
+# Airbnb Data Analyst Project
 ## Descripción del proyecto
 Este proyecto, desarrollado por la División de Tracks, permite realizar un análisis exhaustivo de datos de Airbnb. Incluye un análisis exploratorio global de los datos de Airbnb y un modelo predictivo enfocado en estimar los ingresos anuales de propiedades ubicadas en Madrid. La aplicación ofrece un análisis estadístico detallado a través de herramientas de Exploratory Data Analysis (EDA) y visualizaciones interactivas en Power BI, brindando una visión completa y fácilmente interpretable de las tendencias y características del mercado de alquileres vacacionales con Airbnb.
 
