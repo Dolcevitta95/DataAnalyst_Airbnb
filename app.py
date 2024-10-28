@@ -177,14 +177,14 @@ def main():
     # Contenido de la pestaña de análisis
     with tab_analisis:
         st.header("Análisis de Datos de Airbnb Madrid")
-        st.markdown("[Ver Dashboard Completo en PowerBI](https://app.powerbi.com/view?r=eyJrIjoiNjgzNGFmNDctNGIxMC00MzcwLTljOTQtZjk0NTQ3NjZhOTVkIiwidCI6ImJlNDViM2I2LWQzOGMtNDBhMi1hMmVmLTk2MWI4YTRmYmM3YiIsImMiOjl9)")
+        st.markdown("[Ver Dashboard Completo en PowerBI](https://app.fabric.microsoft.com/view?r=eyJrIjoiMTc0ZDJjNzItYjM1Zi00NTU1LThlM2UtZmE0YmM3NWY2YzQyIiwidCI6ImJlNDViM2I2LWQzOGMtNDBhMi1hMmVmLTk2MWI4YTRmYmM3YiIsImMiOjl9)")
         # Proporcionar tanto el enlace directo como el dashboard incrustado
         html_code = """
             <iframe
                 width="100%"
                 height="800"
                 length="1600"
-                src="https://app.powerbi.com/view?r=eyJrIjoiNjgzNGFmNDctNGIxMC00MzcwLTljOTQtZjk0NTQ3NjZhOTVkIiwidCI6ImJlNDViM2I2LWQzOGMtNDBhMi1hMmVmLTk2MWI4YTRmYmM3YiIsImMiOjl9" 
+                src="https://app.fabric.microsoft.com/view?r=eyJrIjoiMTc0ZDJjNzItYjM1Zi00NTU1LThlM2UtZmE0YmM3NWY2YzQyIiwidCI6ImJlNDViM2I2LWQzOGMtNDBhMi1hMmVmLTk2MWI4YTRmYmM3YiIsImMiOjl9"
                 frameborder="0"
                 allowFullScreen="true"
                 style="aspect-ratio: 16/9; width: 100%;">
