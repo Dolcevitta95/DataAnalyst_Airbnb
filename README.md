@@ -24,7 +24,7 @@ Este proyecto, desarrollado por la División de Tracks, permite realizar un aná
 1. Análisis exploratorio de datos global y en Madrid.
    - Exploración detallada de datos a nivel global, utilizando gráficos descriptivos y técnicas de EDA para identificar patrones, correlaciones y variaciones en los datos.
    - Examina distribuciones de precios, tasas de ocupación y características clave en diferentes áreas geográficas.
-   - [Ver EDA Usado para el análisis]()
+   - [Ver EDA Usado para el análisis](https://github.com/AI-School-F5-P3/Grupo2_DataAnalyst/blob/main/eda_j/eda_j_final.ipynb)
 2. Modelo predictivo para estimar ingresos anuales en propiedades de Airbnb en Madrid.
    - Implementación de un modelo de aprendizaje automático para predecir los ingresos anuales de propiedades de Airbnb en Madrid.
    - El modelo considera factores como ubicación, tipo de propiedad, precio por noche, opiniones, disponibilidad anual, etc.
