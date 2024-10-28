@@ -9,7 +9,26 @@ st.set_page_config(layout="wide")
 st.markdown("""
     <style>
         .stApp {
-            background: linear-gradient(to right, #FF5A5F, #FF385C);  /* Colores de Airbnb */
+            background: linear-gradient(to right, rgba(255, 90, 95, 0.7), rgba(255, 56, 92, 0.7));
+        }
+
+        /* Modificar el estilo para los labels de los inputs */
+        .stSelectbox label, .stNumberInput label {
+            font-size: 3em !important;  /* Tamaño equivalente a h2 */
+            font-weight: bold !important;
+            color: black !important;
+            margin-bottom: 10px !important;
+        }
+        
+        /* Estilo para el resultado de la predicción */
+        .prediction-result {
+            text-align: center !important;
+            padding: 20px !important;
+            margin: 20px auto !important;
+            font-size: 2em !important;
+            background-color: rgba(255, 255, 255, 0.1) !important;
+            border-radius: 10px !important;
+            width: 80% !important;
         }
 
         /* Estilo para el texto para mejor contraste */
@@ -66,7 +85,11 @@ data_dict = {
 
 # Crear la aplicación Streamlit
 def main():
-    st.title('Predicción de Ingresos Airbnb en Madrid')
+    col1, col2 = st.columns([4, 1])  # Proporción 4:1 para el título y logo
+    with col1:
+        st.title('Predicción de Ingresos Airbnb en Madrid')
+    with col2:
+        st.image('airbnb_Logo_Bélo.svg.png', width=400)
 
     # Crear las pestañas
     tab_prediccion, tab_analisis = st.tabs(["Predicción", "Análisis de Datos"])
@@ -143,8 +166,14 @@ def main():
             # Realizar predicción
             prediction = predict_ingresos(model, input_data)[0]
 
-            # Mostrar el resultado
-            st.subheader(f"Ingreso Anual Estimado: €{prediction:,.2f}")
+            # Mostrar el resultado centrado
+            st.markdown(
+                f"<div class='prediction-result'>"
+                f"<h2>Ingreso Anual Estimado:</h2>"
+                f"<h1>€{prediction:,.2f}</h1>"
+                f"</div>",
+                unsafe_allow_html=True
+            )
     # Contenido de la pestaña de análisis
     with tab_analisis:
         st.header("Análisis de Datos de Airbnb Madrid")
